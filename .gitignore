@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Kaggle raw data: large and redistributable only under Kaggle's terms.
+# Re-download with `python -m src.ingest.kaggle_flood`.
+data/raw/kaggle/
+# Regenerable intermediate, rebuilt by `python -m src.features.build`.
+data/processed/sequences.npz

@@ -1,0 +1,119 @@
+{
+  "macro_f1": 0.8947932780418103,
+  "weighted_f1": 0.8972163306722993,
+  "baseline_f1": 0.10526315789473684,
+  "report": {
+    "Low": {
+      "precision": 0.8703703703703703,
+      "recall": 0.8468468468468469,
+      "f1-score": 0.8584474885844748,
+      "support": 111.0
+    },
+    "Moderate": {
+      "precision": 0.8859060402684564,
+      "recall": 0.8918918918918919,
+      "f1-score": 0.8888888888888888,
+      "support": 148.0
+    },
+    "High": {
+      "precision": 0.8947368421052632,
+      "recall": 0.918918918918919,
+      "f1-score": 0.9066666666666666,
+      "support": 148.0
+    },
+    "Severe": {
+      "precision": 0.9315068493150684,
+      "recall": 0.918918918918919,
+      "f1-score": 0.9251700680272109,
+      "support": 148.0
+    },
+    "accuracy": 0.8972972972972973,
+    "macro avg": {
+      "precision": 0.8956300255147895,
+      "recall": 0.8941441441441441,
+      "f1-score": 0.8947932780418103,
+      "support": 555.0
+    },
+    "weighted avg": {
+      "precision": 0.8973140025244176,
+      "recall": 0.8972972972972973,
+      "f1-score": 0.8972163306722993,
+      "support": 555.0
+    }
+  },
+  "confusion": [
+    [
+      94,
+      11,
+      2,
+      4
+    ],
+    [
+      5,
+      132,
+      10,
+      1
+    ],
+    [
+      4,
+      3,
+      136,
+      5
+    ],
+    [
+      5,
+      3,
+      4,
+      136
+    ]
+  ],
+  "confusion_labels": [
+    "Low",
+    "Moderate",
+    "High",
+    "Severe"
+  ],
+  "classes_present_in_test": [
+    "Low",
+    "Moderate",
+    "High",
+    "Severe"
+  ],
+  "importance": {
+    "rain_max_hour_mm": 0.18678151071071625,
+    "elevation_m": 0.17193953692913055,
+    "elevation_index": 0.16459274291992188,
+    "imperviousness": 0.15555311739444733,
+    "drain_quality": 0.13426868617534637,
+    "drain_capacity_ratio": 0.06817226111888885,
+    "rain_max_6h_mm": 0.041379164904356,
+    "antecedent_rain_72h_mm": 0.023723071441054344,
+    "duration_h": 0.021452616900205612,
+    "rain_total_mm": 0.018699053674936295,
+    "antecedent_soil_moisture": 0.01343818660825491
+  },
+  "n_train": 2895,
+  "n_test": 555,
+  "kaggle": {
+    "macro_f1": 0.6097256201218608,
+    "n_sampled": 300000,
+    "top_features": [
+      "Landslides",
+      "CoastalVulnerability",
+      "DeterioratingInfrastructure",
+      "DamsQuality",
+      "RiverManagement",
+      "ClimateChange",
+      "PopulationScore",
+      "PoliticalFactors",
+      "WetlandLoss",
+      "MonsoonIntensity"
+    ],
+    "band_edges": [
+      0.47,
+      0.505,
+      0.54
+    ],
+    "caveat": "Quartile bands of a target with stdev 0.051. High F1 here reflects a narrow continuous score, not transferable flood-risk skill. Reported for completeness only."
+  }
+}

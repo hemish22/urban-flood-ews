@@ -1,0 +1,8 @@
+# Dashboard-only dependencies, used by Streamlit Community Cloud.
+# The full pipeline (torch, xgboost, ...) is in the root requirements.txt.
+streamlit==1.64.0
+pandas==3.0.6
+numpy==2.4.6
+pyarrow==25.0.1
+folium==0.20.0
+plotly==7.1.0

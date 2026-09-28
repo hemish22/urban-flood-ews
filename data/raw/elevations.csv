@@ -1,0 +1,16 @@
+ward,lat,lon,elevation_m,elevation_index,flood_2015_expectation,source,matches_config
+Perungalathur,12.923,80.246,-2.0,0.0,flooded,real:opentopodata/srtm30m,True
+Velachery,12.975,80.221,6.0,0.25806451612903225,flooded,real:opentopodata/srtm30m,True
+Madipakkam,12.961,80.192,9.0,0.3548387096774194,flooded,real:opentopodata/srtm30m,True
+Chetpet,13.011,80.245,8.0,0.3225806451612903,flooded,real:opentopodata/srtm30m,True
+Saidapet,13.021,80.223,12.0,0.45161290322580644,flooded,real:opentopodata/srtm30m,True
+Perungudi,12.969,80.243,8.0,0.3225806451612903,flooded,real:opentopodata/srtm30m,True
+Egmore,13.073,80.265,8.0,0.3225806451612903,flooded,real:opentopodata/srtm30m,True
+Triplicane,13.056,80.274,10.0,0.3870967741935484,flooded,real:opentopodata/srtm30m,True
+Mylapore,13.033,80.278,14.0,0.5161290322580645,waterlogged,real:opentopodata/srtm30m,True
+Purasawalkam,13.038,80.195,14.0,0.5161290322580645,waterlogged,real:opentopodata/srtm30m,True
+Koyambedu,13.07,80.194,11.0,0.41935483870967744,waterlogged,real:opentopodata/srtm30m,True
+Guindy,13.006,80.22,12.0,0.45161290322580644,waterlogged,real:opentopodata/srtm30m,True
+T.Nagar,13.043,80.234,16.0,0.5806451612903226,minor,real:opentopodata/srtm30m,True
+Ambattur,12.907,80.15,23.0,0.8064516129032258,drained,real:opentopodata/srtm30m,True
+Avadi,13.115,80.1,29.0,1.0,drained,real:opentopodata/srtm30m,True

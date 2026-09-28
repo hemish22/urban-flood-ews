@@ -1,0 +1,13 @@
+{
+  "episodes_total": 44,
+  "episodes_detected": 43,
+  "episode_recall": 0.9772727272727273,
+  "ward_recall": 1.0,
+  "median_lead_h": 2.0,
+  "min_lead_h": 1.0,
+  "alert_records": 1377,
+  "alert_rate": 0.03143835616438356,
+  "flood_depth_mm": 100.0,
+  "alert_horizon_h": 4,
+  "protocol": "LSTM trained on 2010-2014 only; engine saw current state plus forecast, never the simulator's future; alerts scored against the simulator as ground truth"
+}

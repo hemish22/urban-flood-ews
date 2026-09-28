@@ -1,0 +1,131 @@
+{
+  "all_windows": {
+    "per_horizon": [
+      {
+        "horizon_h": 1,
+        "lstm_rmse": 0.8074053448450781,
+        "persistence_rmse": 1.0874674057734741,
+        "lstm_mae": 0.1000051200389862,
+        "persistence_mae": 0.15304973721504211,
+        "rmse_improvement_pct": 25.753605068208785,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 2,
+        "lstm_rmse": 1.4013204427226642,
+        "persistence_rmse": 2.117969776633143,
+        "lstm_mae": 0.18130271136760712,
+        "persistence_mae": 0.29928722977638245,
+        "rmse_improvement_pct": 33.83661758619188,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 3,
+        "lstm_rmse": 2.3034952474271426,
+        "persistence_rmse": 3.0879769454945354,
+        "lstm_mae": 0.29413703083992004,
+        "persistence_mae": 0.4387248754501343,
+        "rmse_improvement_pct": 25.404389731988726,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 4,
+        "lstm_rmse": 3.3696345312792673,
+        "persistence_rmse": 3.994384638787072,
+        "lstm_mae": 0.4300641119480133,
+        "persistence_mae": 0.5724904537200928,
+        "rmse_improvement_pct": 15.640709746408277,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 5,
+        "lstm_rmse": 4.30340413038039,
+        "persistence_rmse": 4.843375702209052,
+        "lstm_mae": 0.5491742491722107,
+        "persistence_mae": 0.7025770545005798,
+        "rmse_improvement_pct": 11.148661698541835,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 6,
+        "lstm_rmse": 5.035271216382905,
+        "persistence_rmse": 5.644917300001174,
+        "lstm_mae": 0.6433488726615906,
+        "persistence_mae": 0.8293155431747437,
+        "rmse_improvement_pct": 10.799911694333266,
+        "lstm_beats_persistence": true
+      }
+    ],
+    "horizons_won": 6,
+    "n_test": 131310
+  },
+  "storm_active_windows": {
+    "per_horizon": [
+      {
+        "horizon_h": 1,
+        "lstm_rmse": 1.4091625569466177,
+        "persistence_rmse": 1.897955185645528,
+        "lstm_mae": 0.30461224913597107,
+        "persistence_mae": 0.4661899209022522,
+        "rmse_improvement_pct": 25.753644363982346,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 2,
+        "lstm_rmse": 2.445701690025134,
+        "persistence_rmse": 3.6964767589811114,
+        "lstm_mae": 0.552076518535614,
+        "persistence_mae": 0.9114657044410706,
+        "rmse_improvement_pct": 33.83695206298925,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 3,
+        "lstm_rmse": 4.020258623600572,
+        "persistence_rmse": 5.389421853958166,
+        "lstm_mae": 0.8956126570701599,
+        "persistence_mae": 1.3360373973846436,
+        "rmse_improvement_pct": 25.40464019071055,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 4,
+        "lstm_rmse": 5.8809962413498855,
+        "persistence_rmse": 6.97137648006873,
+        "lstm_mae": 1.3095731735229492,
+        "persistence_mae": 1.7434136867523193,
+        "rmse_improvement_pct": 15.640817015638989,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 5,
+        "lstm_rmse": 7.5107080947127995,
+        "persistence_rmse": 8.45312229234014,
+        "lstm_mae": 1.6723610162734985,
+        "persistence_mae": 2.139636993408203,
+        "rmse_improvement_pct": 11.148711269459762,
+        "lstm_beats_persistence": true
+      },
+      {
+        "horizon_h": 6,
+        "lstm_rmse": 8.788023810151687,
+        "persistence_rmse": 9.85204263798249,
+        "lstm_mae": 1.9588872194290161,
+        "persistence_mae": 2.5253546237945557,
+        "rmse_improvement_pct": 10.799981962407488,
+        "lstm_beats_persistence": true
+      }
+    ],
+    "horizons_won": 6,
+    "n_test": 43108,
+    "definition": "windows with any depth > 1 mm, any 24 h rain total > 2 mm, or any forecast depth > 1 mm"
+  },
+  "meets_target_all": true,
+  "meets_target_storm": true,
+  "n_train": 657015,
+  "params": 39942,
+  "epochs": 30,
+  "device": "mps",
+  "target": "log1p target with storm-window sample weighting; the storm-active subset is the honest basis for an early-warning claim",
+  "note": "Depth is simulated by our bucket model, so these errors measure skill at predicting that simulator. They do not transfer to real gauges without retraining."
+}

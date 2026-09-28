@@ -1,0 +1,16 @@
+ward,elev_m,peak_depth_mm,hours_above_flood,physics_class,documented_2015
+Perungalathur,-2.0,296.9,115,Severe,flooded
+Velachery,6.0,201.5,84,Severe,flooded
+Chetpet,8.0,193.6,78,Severe,flooded
+Egmore,8.0,180.8,71,Severe,flooded
+Perungudi,8.0,175.9,67,High,flooded
+Triplicane,10.0,172.7,64,High,flooded
+Madipakkam,9.0,166.5,54,High,flooded
+Saidapet,12.0,152.9,39,High,flooded
+Koyambedu,11.0,142.5,34,High,waterlogged
+Guindy,12.0,139.3,32,High,waterlogged
+Mylapore,14.0,131.4,28,High,waterlogged
+Purasawalkam,14.0,129.0,26,High,waterlogged
+T.Nagar,16.0,123.0,23,High,minor
+Ambattur,23.0,54.1,0,Low,drained
+Avadi,29.0,39.0,0,Low,drained
